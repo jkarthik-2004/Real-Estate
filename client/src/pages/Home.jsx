@@ -5,6 +5,9 @@ import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
+import { FaLinkedin } from "react-icons/fa6";
+import { MdMail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -54,7 +57,7 @@ export default function Home() {
           place with ease
         </h1>
         <div className='text-gray-400 text-xs sm:text-sm'>
-          Sahand Estate is the best place to find your next perfect place to
+          Bricks Estate is the best place to find your next perfect place to
           live.
           <br />
           We have a wide range of properties for you to choose from.
@@ -127,7 +130,18 @@ export default function Home() {
             </div>
           </div>
         )}
+        <hr />
+         <footer className='my-5'>
+      <h2 className='text-2xl font-semibold text-slate-600'>Contact Developer</h2>
+      <h3 className='my-3 text-xl font-semibold text-slate-500'>Karthik Jonnalagadda</h3>
+      <div className='flex items-center gap-4'>
+      <a href="https://www.linkedin.com/in/karthik-j2004/" target="_blank"><FaLinkedin className='text-2xl'/></a>
+      <a href="mailto:jkarthik1947@gmail.com"><MdMail className='text-2xl'/></a>
+      <a href="https://github.com/jkarthik-2004"><FaGithub className='text-2xl'/></a>
       </div>
+      </footer>
+      </div>
+     
     </div>
   );
 }
